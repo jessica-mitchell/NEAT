@@ -77,7 +77,7 @@ napoleon_use_keyword = True
 napoleon_custom_sections = None
 
 
-# nbsphinx_allow_errors = True
+nbsphinx_allow_errors = True
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['']
 
