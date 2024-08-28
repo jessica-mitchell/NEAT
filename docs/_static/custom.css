@@ -5,7 +5,18 @@
     --nest-dkblue: #072f42;
     --nest-brown: #4b210c;
 
+a {color: var(--nest-orange);}
+a:hover {
+  text-decoration: underline;
+}
 
+ul.md-tabs__list li.md-tabs__item a.md-tabs__link {
+ color: #fff;
+ opacity:0.9;
+}
+a.md-tabs__link, a.md-source {
+  color: #fff;
+}
 [data-md-color-primary=orange] .md-tabs {
   background-color: var(--nest-orange);
  }
@@ -24,15 +35,31 @@ div[role="main"] .md-header {
 [data-md-color-primary="orange"] .md-header, [data-md-color-primary="orange"] .md-hero {
   background-color: var(--nest-orange);
 }
-[data-md-color-primary="orange"] .md-nav__link--active, [data-md-color-primary="orange"] .md-nav__link:active {
-	color: var(--nest-orange);
-}
+
 [data-md-color-primary="orange"] .md-typeset a {
   color: var(--nest-orange);
 	background-color: #ffffff8a;
 	border-radius: 5px;
 }
+.md-nav__link:hover {
 
+	color: var(--nest-brown);
+}
+
+
+/*
+[data-md-color-primary="orange"] .md-nav__link--active, [data-md-color-primary="orange"] .md-nav__link:active {
+	color: var(--nest-orange);
+}
+
+.md-nav__extra_link{
+  color: var(--nest-orange);
+}
+
+.md-nav__link, .md-nav__link:focus{
+	color: var(--nest-orange) !important;
+}
+*/
 .md-typeset .admonition, .md-typeset .admonition.tip {
   border-left: .2rem solid var(--nest-blue);
   border-radius: 5px;
