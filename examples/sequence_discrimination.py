@@ -2,7 +2,8 @@
 Sequence discrimination
 =================
 
-.. image:: ../../../../figures/sequence_discrimination.png
+.. image:: /figures/sequence_discrimination.png
+    :width: 80%
 """
 
 import sys

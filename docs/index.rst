@@ -42,9 +42,7 @@ channels (`neat.IonChannel`) and to provide a high-level API for the
 simplification method described in [Wybo2021]_ (`neat.CompartmentFitter`).
 
 .. figure:: figures/neat_overview.png
-   :height: 380 px
-   :width: 550 px
-   :scale: 100 %
+   :width: 80%
    :alt: NEAT structure overview
 
    **Figure 1.** Overview of NEAT structures. NEAT contains a number of tree classes,
@@ -59,9 +57,7 @@ if the node is the root), and a list containing references to its child nodes
 (empty if the node is a leaf).
 
 .. figure:: figures/tree_overview.png
-   :height: 490 px
-   :width: 460 px
-   :scale: 100 %
+   :width: 80%
    :alt: NEAT structure overview
 
    **Figure 2.** Layout of a NEAT tree. **A:** Each NEAT tree consists of corresponding nodes.

@@ -2,7 +2,8 @@
 Bac firing
 =================
 
-.. image:: ../../../../figures/bac_firing.png
+.. image:: /figures/bac_firing.png
+   :width: 80%
 """
 
 import numpy as np

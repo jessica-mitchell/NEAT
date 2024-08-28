@@ -2,7 +2,9 @@
 bac firing nest
 ---------------
 
-compilechannels nest models/channels/channels_hay.py --name bac_firing --nestmlresource bac_firing_syns.nestml
+To run:
+
+   ``compilechannels nest models/channels/channels_hay.py --name bac_firing --nestmlresource bac_firing_syns.nestml``
 """
 
 import numpy as np
