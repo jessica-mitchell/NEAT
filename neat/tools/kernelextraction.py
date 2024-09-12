@@ -51,7 +51,7 @@ class ExpFitter(Fitter):
         Construct a sum of exponentials fit to a given time-sequence y by
         using prony's method
 
-        input:
+        Parameters:
             [deg]: int, number of exponentials
             [x]: numpy array, sequence of regularly spaced points at which y is evaluated
             [y]: numpy array, sequence
@@ -152,7 +152,7 @@ class ExpFitter(Fitter):
         Reduces the number of exponential terms in a series, till a given tolerance
         is reached
 
-        input:
+        Parameters:
             [a]: numpy array of exponential timescales
             [c]: numpy array of exponential magnitudes
             [x]: numpy array of x-values at which the function is evaluated
@@ -800,7 +800,7 @@ class fExpFitter(Fitter):
         """
         Fits a function in fourrierspace by a series of fourrier transformed exponentials.
 
-        input:
+        Parameters:
             -args
             [s]: numpy array of frequencies (imaginary) at which value function is evaluated
             [y]: numpy array of complex function values
@@ -926,7 +926,7 @@ class fExpFitter(Fitter):
         """
         Fit multiple data-arrays in Fourrier-domain simultaneously with a shared set of nodes
 
-        input:
+        Parameters:
             [s]: numpy array of complex number, frequencies of data
             [ys]: numpy ndarray of complex numbers, rows are different data-arrays
             [deg]: int, the starting number of nodes
@@ -1131,7 +1131,7 @@ class expExtractor(object):
         """
         Fit a partial fraction decomposition to the obtained kernel in the frequency domain
 
-        input:
+        Parameters:
             N (int): the number of exponenstials to use
             recalc (bool): whether to force a refit if a fit with the given N already exists
             atol (float): the tolerance, if the RMSE of the fit is higher
@@ -1245,7 +1245,8 @@ class kernelExtractor(expExtractor):
     This class computes the rescale kernel between the
     synapse in the dendrite and the synapse in the soma.
 
-    input:
+    Parameters
+    ----------
         vdend (numpy 1d array): the somatic voltage recording
             with the synapse in the dendrites
         vsoma (numpy 1d array): the somatic voltage recording
