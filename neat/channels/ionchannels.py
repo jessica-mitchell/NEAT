@@ -510,7 +510,7 @@ class IonChannel(object):
         args = self._args_as_list(v, **kwargs)
         return self.dp_dx(*args), self.df_dv(*args), self.df_dx(*args)
 
-    def compute_derivativesConc(self, v, **kwargs):
+    def compute_derivatives_conc(self, v, **kwargs):
         """
         Compute the derivatives of the state functions to the concentrations
 
@@ -661,7 +661,7 @@ class IonChannel(object):
             the dimensions of `v`.
         """
         dp_dx, df_dv, df_dx = self.compute_derivatives(v, **kwargs)
-        df_dc = self.compute_derivativesConc(v, **kwargs)
+        df_dc = self.compute_derivatives_conc(v, **kwargs)
 
         # determine the output shape according to numpy broadcasting rules
         args_aux = [freqs] + self._args_as_list(v, **kwargs)

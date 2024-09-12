@@ -77,8 +77,6 @@ Compartment Tree
    CompartmentTree.compute_gmc
    CompartmentTree.compute_g_channels
    CompartmentTree.compute_g_single_channel
-   CompartmentTree.compute_concMechGamma
-   CompartmentTree.compute_concMechTau
    CompartmentTree.compute_c
    CompartmentTree.reset_fit_data
    CompartmentTree.run_fit
@@ -130,10 +128,19 @@ Simulate reduced compartmental models
 .. autosummary::
    :toctree: generated/
 
-.. autofunction:: neat.simulations.neuron.neuronmodel.createReducedNeuronModel
+    NeuronCompartmentTree.add_shunt
+    NeuronCompartmentTree.add_double_exp_current
+    NeuronCompartmentTree.add_exp_synapse
+    NeuronCompartmentTree.add_double_exp_synapse
+    NeuronCompartmentTree.add_nmda_synapse
+    NeuronCompartmentTree.add_double_exp_nmda_synapse
+    NeuronCompartmentTree.add_i_clamp
+    NeuronCompartmentTree.add_sin_clamp
+    NeuronCompartmentTree.add_ou_clamp
+    NeuronCompartmentTree.add_ou_conductance
+    NeuronCompartmentTree.add_ou_reversal
+    NeuronCompartmentTree.add_v_clamp
 
-.. autosummary::
-   :toctree: generated/
 
 
 *******************
@@ -181,8 +188,10 @@ Relating to the computational tree.
 .. autosummary::
    :toctree: generated/
 
-   MorphTree.setTreetype
-   MorphTree.treetype
+   MorphTree.set_default_tree
+   MorphTree.as_original_tree
+   MorphTree.check_computational_tree_active
+   MorphTree.as_computational_tree
    MorphTree.read_swc_tree_from_file
    MorphTree.set_comp_tree
    MorphTree._evaluate_comp_criteria
@@ -393,7 +402,6 @@ Individual fit functions.
    CompartmentFitter.create_tree_sov
    CompartmentFitter.fit_leak_only
    CompartmentFitter.fit_passive
-   CompartmentFitter.eval_channel
    CompartmentFitter.fit_channels
    CompartmentFitter.fit_concentration
    CompartmentFitter.fit_capacitance
@@ -411,7 +419,7 @@ Defining ion channels
    IonChannel.set_default_params
    IonChannel.compute_p_open
    IonChannel.compute_derivatives
-   IonChannel.compute_derivativesConc
+   IonChannel.compute_derivatives_conc
    IonChannel.compute_varinf
    IonChannel.compute_tauinf
    IonChannel.compute_linear
