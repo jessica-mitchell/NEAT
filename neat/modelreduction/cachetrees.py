@@ -227,7 +227,7 @@ class EquilibriumTree(CachedTree):
             if `list` of locations, specifies the locations for which the
             equilibrium state evaluated, if ``string``, specifies the
             name under which a set of locations is stored
-        ions: `iterable` of `str
+        ions: `iterable` of `str`
             the names of the ions for which the concentration needs to be measured
         method: Literal: 'interp' or 'sim'
             whether to use interpolation or simulation. Defaults to simulation if
@@ -331,13 +331,13 @@ class EquilibriumTree(CachedTree):
 
         Parameters
         ----------
-        ions: `list` of `str
+        ions: list of str
             the names of the ions for which the concentration needs to be measured
         t_max: float
             duration of the simulation
         dt: float
             time-step of the simulation
-        factor_lambda: `float`
+        factor_lambda: float
             multiplies the number of compartments suggested by the lambda-rule
         """
         self.maybe_execute_funcs(

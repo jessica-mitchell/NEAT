@@ -1179,7 +1179,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the shunt.
         g: float
             The conductance of the shunt (uS)
@@ -1195,7 +1195,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau1: float
             Rise time of the current waveform (ms)
@@ -1211,7 +1211,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau: float
             Decay time of the conductance window (ms)
@@ -1227,7 +1227,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau1: float
             Rise time of the conductance window (ms)
@@ -1246,7 +1246,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau: float
             Decay time of the AMPA conductance window (ms)
@@ -1269,7 +1269,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau1: float
             Rise time of the AMPA conductance window (ms)
@@ -1295,7 +1295,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         amp: float
             The amplitude of the current (nA)
@@ -1313,7 +1313,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         amp: float
             The amplitude of the current (nA)
@@ -1337,7 +1337,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the current.
         tau: float
             Time-scale of the OU process (ms)
@@ -1361,7 +1361,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the conductance.
         tau: float
             Time-scale of the OU process (ms)
@@ -1391,7 +1391,7 @@ class NeuronCompartmentTree(NeuronSimTree):
 
         Parameters
         ----------
-        loc: dict, tuple or :class:`neat.MorphLoc`
+        loc_idx: int, dict, tuple or :class:`neat.MorphLoc`
             The location of the conductance.
         e_c: float
             The clamping voltage (mV)

@@ -633,6 +633,19 @@ class MorphTree(STree):
             )
 
     def set_default_tree(self, default: Literal['original', 'computational'] = 'original'):
+        """
+        Set the tree type that is by default active
+
+        Parameters
+        ----------
+        default : Literal[&#39;original&#39;, &#39;computational&#39;], optional
+            the treetype that is by default active
+
+        Raises
+        ------
+        ValueError
+            if `default` argument is not 'original' or 'computational'
+        """
         if default == 'original':
             self.root = self._original_root
         elif default == 'computational':
@@ -644,6 +657,14 @@ class MorphTree(STree):
     @property
     @contextmanager
     def as_computational_tree(self):
+        """
+        Context manager that ensures the computational tree is active.
+
+        Yields
+        ------
+        self
+            `self` with the computational tree activated
+        """
         self._check_computational_root()
         treetype = 'computational' if self.check_computational_tree_active() else 'original'
         self.root = self._computational_root
@@ -657,6 +678,14 @@ class MorphTree(STree):
     @property
     @contextmanager
     def as_original_tree(self):
+        """
+        Context manager that ensures the original tree is active.
+
+        Yields
+        ------
+        self
+            `self` with the original tree activated
+        """
         treetype = 'computational' if self.check_computational_tree_active() else 'original'
         self.root = self._original_root
         try:

@@ -371,7 +371,7 @@ class NET(STree):
 
     def get_reduced_tree(self, loc_idxs, indexing='NET eval'):
         """
-        Construct a reduced tree where only the locations index by ``loc_idxs''
+        Construct a reduced tree where only the locations index by ``loc_idxs``
         are retained
 
         Parameters
